@@ -1,23 +1,20 @@
 /*
 ---
-
-script: horve-0.1.js
-
 description: Class for Horizontal & Vertical Scrolling WebSites
 
 license: MIT-style license.
 
 authors: 
--Ennio Pirolo
--eqepa
+ -Ennio Pirolo
+ -eqepa
 
-docs: http://eqepa.com/projects/mootools-plugins/horve-mootools-horizontal-vertical-scroll/
+docs: 
+ - http://eqepa.com/projects/mootools-plugins/horve-mootools-horizontal-vertical-scroll/
 
 requires:
-- more/1.2.4.2: '*'
+ - more/1.2.4.2: '*'
 
-provides:
--horve
+provides: [horve]
 ...
 */
 
