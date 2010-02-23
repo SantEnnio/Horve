@@ -4,7 +4,7 @@ Horve
 Provides a Class for Horizontal & Vertical Scrolling WebSites
 
 ![Horve](http://eqepa.com/wp-content/uploads/2010/02/horve-logo1-200x57.png)
-
+ 
 How to use
 ----------
 
