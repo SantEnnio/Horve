@@ -3,7 +3,7 @@
 
 script: horve-0.1.js
 
-description: Provides a Class for Horizontal & Vertical Scrolling WebSites
+description: Class for Horizontal & Vertical Scrolling WebSites
 
 license: MIT-style license.
 
