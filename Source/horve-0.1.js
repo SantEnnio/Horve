@@ -1,23 +1,19 @@
 /*
 ---
-description: Class for Horizontal & Vertical Scrolling WebSites
+description: horve - Class for Horizontal & Vertical Scrolling WebSites
 
-license: MIT-style license.
+authors:
+  - Ennio Pirolo (http://eqepa.com)
 
-authors: 
- -Ennio Pirolo
- -eqepa
-
-docs: 
- - http://eqepa.com/projects/mootools-plugins/horve-mootools-horizontal-vertical-scroll/
+license: MIT-style
 
 requires:
- - more/1.2.4.2: '*'
+  - more/1.2.4.2: '*'
 
-provides: [horve]
+provides: [Horve]
+
 ...
 */
-
 var horve=new Class({
 	xScreenDim:0,
 	yScreendim:0,
