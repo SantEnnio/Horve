@@ -37,7 +37,16 @@ How to use
 *JS*
 
 	#JS
-    var hv=new horve("DivWindow","container",3, Fx.Transitions.Quad.easeInOut,1000,3, );
+    var hv=new horve("DivWindow","container",{
+			rows:3, 
+			transition:Fx.Transitions.Quad.easeInOut,
+			duration:500,
+			defaultScreen:3,
+			haveButton:true,
+			screens:null,
+			_minX:1000,
+			_minY:500,
+		});
 
 
 *PARAMS*
@@ -46,16 +55,19 @@ How to use
 	
     * Container: the id of the div that contains the screens.
 	
-    * numRows: number of rows of screens.
+    * rows: number of rows of screens. Default value=1.
 	
-    * Transition: Fx.Transition to use when switch from a screen to another.
+    * transition: Fx.Transition to use when switch from a screen to another. Default value=Fx.Transitions.Quad.easeInOut.
 	
-    * Duration: millis
+    * duration: millis. Default value=1000.
 	
-    * DefaultScreen: first Screen to display
+    * defaultScreen: first Screen to display. Default value=1.
 	
-	* haveButtons: set true if the page provides buttons for switching from screen to screen (view notes)
+	* haveButtons: set true if the page provides buttons for switching from screen to screen (view notes). Default value=true.
 	
+	* screens: the array of screen to switch. If is set to null the class take all divs with class="screen"
+	
+	* _minX & _minY: the class sets the size of the screens based on the client resolution. These parameters are the minimum size of the screens. Default values=1000x500
 	
 *NOTES*
 
@@ -65,5 +77,5 @@ If haveButtons is set to false you can use the method hv.switchToScreen(screenNu
 *NOTES, DEMO & DOCUMENTATION*
 
 This is a very beta version of the class.
-[Here](http://eqepa.com/Playground/Mootools/Horve/demo.html) it is a basic demo.
+[Here](http://eqepa.com/Playground/Mootools/Horve/Example/demo.html) it is a basic demo.
 View the [Horve page](http://eqepa.com/projects/mootools-plugins/horve-mootools-horizontal-vertical-scroll-websites/) for more detailed documentation.

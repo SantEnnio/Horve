@@ -3,11 +3,17 @@
 <head>
 <script type="text/javascript"  src="mootools-1.2.4-core-yc.js" ></script>
 <script type="text/javascript" src="mootools-1.2.4.2-more.js" ></script>
-<script type="text/javascript"  src="horve-0.1.js" ></script>
+<script type="text/javascript"  src="../Source/horve-0.2.js" ></script>
 <link  rel="stylesheet" type="text/css"  href="style.css" />
 <script type="text/javascript"  >
 	window.addEvent('domready', function() {
-    var hv=new horve("DivWindow","container",3, Fx.Transitions.Quad.easeInOut,1000,3, true);
+		var hv=new horve("DivWindow","container",{
+			rows:3, 
+			transition:Fx.Transitions.Quad.easeInOut,
+			duration:1000,
+			defaultScreen:3,
+			haveButton:true
+		});
 });
 
 </script>
