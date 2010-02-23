@@ -16,8 +16,8 @@ docs: http://eqepa.com/projects/mootools-plugins/horve-mootools-horizontal-verti
 requires:
 - more/1.2.4.2: [Fx.Scroll]
 
-provides:[horve]
-
+provides:
+-horve
 ...
 */
 
