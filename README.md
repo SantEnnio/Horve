@@ -47,7 +47,7 @@ How to use
 			_minX:1000,
 			_minY:500,
 			onStart:function(screen){
-				$('content'+screen).morph({ 'height':30, 'opacity':0.5,duration:20});
+				$('content'+screen).morph({'height':30, 'opacity':0.5,duration:20});
 			},
 			onComplete:function(screen){
 				$('content'+screen).morph({'height':200,  'opacity':1, duration:20});
