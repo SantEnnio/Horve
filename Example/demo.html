@@ -3,7 +3,7 @@
 <head>
 <script type="text/javascript"  src="mootools-1.2.4-core-yc.js" ></script>
 <script type="text/javascript" src="mootools-1.2.4.2-more.js" ></script>
-<script type="text/javascript"  src="../Source/horve-0.3.js" ></script>
+<script type="text/javascript"  src="../Source/horve.js" ></script>
 <link  rel="stylesheet" type="text/css"  href="style.css" />
 <script type="text/javascript"  >
 	window.addEvent('domready', function() {
@@ -12,7 +12,13 @@
 			transition:Fx.Transitions.Quad.easeInOut,
 			duration:1000,
 			defaultScreen:3,
-			haveButton:true
+			haveButton:true,
+			onStart:function(screen){
+				$('content'+screen).morph({ 'height':30, 'opacity':0.5,duration:20});
+			},
+			onComplete:function(screen){
+				$('content'+screen).morph({'height':200,  'opacity':1, duration:20});
+			}
 		});
 });
 
@@ -49,32 +55,32 @@
 	<div id="DivWindow">
 		<div id="container">
 			<div id="screen1" num="1" class="screen">
-				<div id="content1" class="content">
+				<div id="content1" class="content" >
 				Screen 1
 				</div>
 			</div>
 			<div id="screen2" num="2" class="screen">
-				<div id="content2" class="content">
+				<div id="content2" class="content" >
 				Screen 2
 				</div>
 			</div>
 			<div id="screen3" num="3" class="screen">
-				<div id="content3" class="content">
+				<div id="content3" class="content" >
 				Screen 3
 				</div>
 			</div>
 			<div id="screen4" num="4" class="screen">
-				<div id="content4" class="content">
+				<div id="content4" class="content" >
 				Screen 4
 				</div>
 			</div>
 			<div id="screen5" num="5" class="screen">
-				<div id="content5" class="content">
+				<div id="content5" class="content" >
 				Screen 5
 				</div>
 			</div>
 			<div id="screen6" num="6" class="screen">
-			   <div id="content6" class="content">
+			   <div id="content6" class="content" >
 			   Screen 6
 			   </div>
 			</div>
