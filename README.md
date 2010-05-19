@@ -88,4 +88,4 @@ If haveButtons is set to false you can use the method hv.switchToScreen(screenNu
 The class has been tested on IE 7+, Chrome 4+, Firefox 3+ and Android phone browser (on htc g1 running Android 1.6).
 [Here](http://eqepa.com/Playground/Mootools/Horve/0.4plus/Example/demo.html) it is a basic demo.
 View the [Horve page](http://eqepa.com/projects/mootools-plugins/horve-mootools-horizontal-vertical-scroll-websites/) for more detailed documentation.
-Please leave your comments or report bugs [here](http://eqepa.com/blog/2010/04/horve-0-4-released/).
+Please leave your comments or report bugs [here](http://eqepa.com/blog/2010/05/horve-0-4-released/).
